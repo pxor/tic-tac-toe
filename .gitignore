@@ -1,0 +1,64 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go build outputs
+bin/
+build/
+dist/
+
+# Go workspace
+go.work
+go.work.sum
+
+# Go test cache
+*.cover
+coverage.out
+
+# Dependency directories (rare with modules but safe)
+vendor/
+
+# Environment files
+.env
+.envrc
+
+# Database / local data
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Direnv
+.direnv/
+
+# Nix (since you mentioned NixOS earlier)
+result
+result-*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Local database files
+.game-data
+.mysql-data/
+*.db
+*.sqlite
+*.sqlite3
