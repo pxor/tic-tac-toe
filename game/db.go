@@ -28,10 +28,10 @@ func newBoard(db *sql.DB) TTTBoard {
 }
 
 func insertMove(t *TTTBoard, i int) error {
-	query := `INSERT INTO game (pid, gamestate, turn, move)
-			  VALUES ($1, $2, $3, $4)`
+	query := `INSERT INTO game (pid, gamestate, turn, move, result)
+			  VALUES ($1, $2, $3, $4, $5)`
 
-	_, err := t.db.Exec(query, t.gamePid, t.fieldsAsString(), t.turnCounter, i)
+	_, err := t.db.Exec(query, t.gamePid, t.fieldsAsString(), t.turnCounter, i, EmptyField)
 	return err
 }
 

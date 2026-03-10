@@ -32,6 +32,9 @@ const (
 	TrainMode3
 )
 
+
+const WorkerCount = 32
+
 func (f FieldType) String() string {
 	switch f {
 	case EmptyField:
